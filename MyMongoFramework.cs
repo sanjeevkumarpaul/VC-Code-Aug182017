@@ -1,11 +1,15 @@
 using System;
+using System.Linq;
 
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 using MongoDB.Driver.Builders;
+using MongoDB.Driver.Core.Events;
+using MongoDB.Driver.Core.Configuration;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
@@ -26,11 +30,28 @@ namespace MyMongoFramework
             { 
                 ConnectionMode = ConnectionMode.Automatic  ,
                 Server = new MongoServerAddress(server, port),
+                ClusterConfigurator = configure => 
+                                      {
+                                          configure.Subscribe<CommandStartedEvent>(e =>  ExecutionInterception(e) );
+                                          configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
+                                      }                                                
             });
 
-            _db = _server.GetDatabase(database);
-        
+            _db = _server.GetDatabase(database);                
         }
+
+        public void ExecutionInterception( CommandStartedEvent e )
+        {
+                          
+              Console.WriteLine($"Query Interpretation: {e.CommandName}");
+              Console.WriteLine(e.Command.ToJson());              
+        }
+        public void ExecuteSuccessInterception(CommandSucceededEvent e)
+        {
+            //Console.WriteLine($"Query Interpretation: {e.CommandName}");
+            //Console.WriteLine(e.ToJson() ); 
+        }
+
 
         public IEnumerable<Zones> ReadAllDocuments()
         {
@@ -68,6 +89,52 @@ namespace MyMongoFramework
                 return _db.GetCollection<Zones>("Zones").Find(query).SetFields(Fields<Zones>.Exclude(f => f.name.First,
                                                                                                      f => f.Birth,
                                                                                                      f => f.Id )  );
+            }
+
+            return null;
+        }
+
+        public IEnumerable<Zones> MultipleConditions()
+        {
+            if (_db != null)
+            {
+                var queries = new QueryBuilder<Zones>();
+                var query = queries.And( new List<IMongoQuery>
+                                         { 
+                                             Query<Zones>.EQ(z =>  z.name.First, "Kristen" ) ,
+                                             Query<Zones>.EQ(z => z.Contribs, "OOP")
+                                         } );
+                query = queries.Or( query, Query<Zones>.ElemMatch(z => z.Awards, a => a.GT<double>( y => y.Year , 1971) ) ); //Element match requried for an Array.
+
+                //Excluding few fields.
+                return _db.GetCollection<Zones>("Zones").Find(query).SetFields(Fields<Zones>.Exclude(f => f.Birth,
+                                                                                                     f => f.Id )  );
+            }
+
+            return null;
+        }
+
+        public IQueryable<Zones> FilterQuerable()
+        {
+            if (_db != null)
+            {
+                 var zones = _db.GetCollection<Zones>("Zones").AsQueryable();
+                 
+                 return zones.Where(z => z.name.First == "Kristen" );    //.Equals does not work instead use == always.
+
+            }
+
+            return null;
+        }
+
+        public IQueryable<Zones> FilterQuerableChaining()
+        {
+            if (_db != null)
+            {
+                 var zones = _db.GetCollection<Zones>("Zones").AsQueryable();
+                 
+                 return zones.Where(z => z.name.First != null).Skip(2).Take(4);    
+
             }
 
             return null;

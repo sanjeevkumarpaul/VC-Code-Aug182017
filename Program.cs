@@ -49,7 +49,10 @@ namespace MyCore2
 
             //var zones = _context.ReadAllDocuments();
             //var zones = _context.LimitedZones();
-            var zones = _context.LimitedFields();
+            //var zones = _context.LimitedFields();
+            //var zones = _context.MultipleConditions();
+            //var zones = _context.FilterQuerable();
+            var zones = _context.FilterQuerableChaining();
 
             foreach(var zone in zones)
             {
@@ -130,7 +133,7 @@ namespace MyCore2
 
     public class SmtpConfiguration
     {
-        public string Server { get; set; } = string.Empty;
+        public string Server { get; set; } = string.Empty; //1
         public string User{ get; set; } = string.Empty;
         public string Pass{ get; set; } = string.Empty;
         public string Port{ get; set; } = string.Empty;
