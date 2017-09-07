@@ -1,0 +1,18 @@
+-- In order to use c# 7, install Compiler 2.0
+--dotnet add package Microsoft.Net.compilers 
+
+Use DockerPersonal;
+Go
+
+Select * From MyKeys Where MyDataid = 3;
+Go
+
+Select * From MyData Where Id > 3;
+Go
+
+Select D.Id, K.Department, D.Name, K.Id, Convert(Varchar(20), D.[Current], 101) "Curr"
+From MyData D Inner Join MyKeys K On D.Id = K.MyDataId
+Where D.Id = 2;
+Go
+
+sp_help MyKeys;

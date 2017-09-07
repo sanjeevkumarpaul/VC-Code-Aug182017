@@ -1,0 +1,10 @@
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/bin/Debug/netcoreapp2.0/VC-Code-Aug182017.deps.json
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/bin/Debug/netcoreapp2.0/VC-Code-Aug182017.runtimeconfig.json
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/bin/Debug/netcoreapp2.0/VC-Code-Aug182017.runtimeconfig.dev.json
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/bin/Debug/netcoreapp2.0/VC-Code-Aug182017.dll
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/bin/Debug/netcoreapp2.0/VC-Code-Aug182017.pdb
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/obj/Debug/netcoreapp2.0/VC-Code-Aug182017.csproj.CoreCompileInputs.cache
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/obj/Debug/netcoreapp2.0/VC-Code-Aug182017.AssemblyInfoInputs.cache
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/obj/Debug/netcoreapp2.0/VC-Code-Aug182017.AssemblyInfo.cs
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/obj/Debug/netcoreapp2.0/VC-Code-Aug182017.dll
+/Users/sanjeevpaul/Desktop/Projects/GIT-HUB/VC-Code-Aug182017/obj/Debug/netcoreapp2.0/VC-Code-Aug182017.pdb
