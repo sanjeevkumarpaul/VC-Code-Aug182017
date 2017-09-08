@@ -83,15 +83,15 @@ namespace LogConfigurations
         private bool IsEnabled(Level level)
         {
         
-            if (level == Level.Critical):
+            if (level == Level.Critical)
                 return _log.IsFatalEnabled;            
             if (level == Level.Debug || level == Level.Trace)
                 return _log.IsDebugEnabled;            
             if (level == Level.Error)
                 return _log.IsErrorEnabled;               
-            if (level == Level.Information)
+            if (level == Level.Info)
                 return _log.IsInfoEnabled;
-            if (level == Level.Warning)
+            if (level == Level.Warn)
                 return _log.IsWarnEnabled;
            
            return false;
