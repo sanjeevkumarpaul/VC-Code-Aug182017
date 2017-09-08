@@ -80,23 +80,21 @@ namespace LogConfigurations
             return null;
         }
 
-        private bool IsEnabled(Level logLevel)
+        private bool IsEnabled(Level level)
         {
         
-            /*case Level.Critical:
-                return _log.IsFatalEnabled;
-            case Level.Debug:
-            case Level.Trace:
-                return _log.IsDebugEnabled;
-            case Level.Error:
-                return _log.IsErrorEnabled;
-            case Level.Information:
+            if (level == Level.Critical):
+                return _log.IsFatalEnabled;            
+            if (level == Level.Debug || level == Level.Trace)
+                return _log.IsDebugEnabled;            
+            if (level == Level.Error)
+                return _log.IsErrorEnabled;               
+            if (level == Level.Information)
                 return _log.IsInfoEnabled;
-            case Level.Warning:
+            if (level == Level.Warning)
                 return _log.IsWarnEnabled;
-                */
-
-            return true;
+           
+           return false;
         }
        
     }
