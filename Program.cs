@@ -8,15 +8,18 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 using MyMongoFramework;
+using LogConfigurations;
 
 namespace MyCore2
 {
     class Program
     {
         static CustomConfigurations Config = null;
-     
+        private static readonly log4net.Core.ILogger log =  LoggingFactory.Logger(typeof(Program));
         static void Main(string[] args)
         {
+            log.Info("Our Program Started...");
+            
             InitializeCustomConfiguration();
             //TrySimpleQuery();
             //TryRelationshipQuery();
