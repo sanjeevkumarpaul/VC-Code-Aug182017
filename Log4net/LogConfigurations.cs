@@ -12,11 +12,22 @@ namespace LogConfigurations
 {
     public static class LoggingFactory
     {
+         private static Logger _logger = null;
+         
          static LoggingFactory(){}
          
          public static ILogger Logger(Type t)
          {
-             return new Logger( t.Name, t );
+             /*
+             lock(new object())
+             {
+               if (_logger == null ) lock (new object()) { _logger = new Logger( t.Name, t ); }
+             }
+
+             return _logger;
+             */
+
+             return new Logger(t.Name, t);
          }
 
          public static void Info(this ILogger log, string message)

@@ -1,5 +1,38 @@
-INFO  03:27:33 Program Started...
-INFO  03:48:56 Our Program Started...
-INFO  12:12:12 App Message - Our Program Started...
-INFO  12:14:07 App Message - Our Program Started...
-INFO  12:17:46 App Message - Our Program Started...
+INFO  03:38:55 App Message - Our Program Started...
+INFO  03:38:56 App Message - Query Interpretation: isMaster
+INFO  03:38:56 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.4.4.0" }, "os" : { "type" : "macOS", "name" : "Darwin 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64", "architecture" : "x86_64", "version" : "16.7.0" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  03:38:56 App Message - Query Interpretation: buildInfo
+INFO  03:38:56 App Message - { "buildInfo" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: getLastError
+INFO  03:38:56 App Message - { "getLastError" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: isMaster
+INFO  03:38:56 App Message - { "isMaster" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: buildInfo
+INFO  03:38:56 App Message - { "buildInfo" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: isMaster
+INFO  03:38:56 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.4.4.0" }, "os" : { "type" : "macOS", "name" : "Darwin 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64", "architecture" : "x86_64", "version" : "16.7.0" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  03:38:56 App Message - Query Interpretation: buildInfo
+INFO  03:38:56 App Message - { "buildInfo" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: getLastError
+INFO  03:38:56 App Message - { "getLastError" : 1 }
+INFO  03:38:56 App Message - Query Interpretation: find
+INFO  03:38:56 App Message - { "find" : "Zones", "filter" : { "name.first" : { "$ne" : null } }, "skip" : 2, "limit" : 4, "noCursorTimeout" : false }
+INFO  03:42:38 App Message - Our Program Started...
+INFO  03:42:40 App Message - Query Interpretation: isMaster
+INFO  03:42:40 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.4.4.0" }, "os" : { "type" : "macOS", "name" : "Darwin 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64", "architecture" : "x86_64", "version" : "16.7.0" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  03:42:40 App Message - Query Interpretation: buildInfo
+INFO  03:42:40 App Message - { "buildInfo" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: getLastError
+INFO  03:42:40 App Message - { "getLastError" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: isMaster
+INFO  03:42:40 App Message - { "isMaster" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: buildInfo
+INFO  03:42:40 App Message - { "buildInfo" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: isMaster
+INFO  03:42:40 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.4.4.0" }, "os" : { "type" : "macOS", "name" : "Darwin 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64", "architecture" : "x86_64", "version" : "16.7.0" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  03:42:40 App Message - Query Interpretation: buildInfo
+INFO  03:42:40 App Message - { "buildInfo" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: getLastError
+INFO  03:42:40 App Message - { "getLastError" : 1 }
+INFO  03:42:40 App Message - Query Interpretation: find
+INFO  03:42:40 App Message - { "find" : "Zones", "filter" : { "name.first" : { "$ne" : null } }, "skip" : 2, "limit" : 4, "noCursorTimeout" : false }

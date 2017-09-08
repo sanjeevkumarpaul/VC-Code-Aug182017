@@ -13,10 +13,14 @@ using MongoDB.Driver.Core.Configuration;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
+using LogConfigurations;
+
 namespace MyMongoFramework
 {
     public class MongoFrameworkCore 
     {
+        private static readonly log4net.Core.ILogger log =  LoggingFactory.Logger(typeof(MongoFrameworkCore));
+        
         //MongoClient _client;
         MongoServer _server;
         MongoDatabase _db;
@@ -43,8 +47,8 @@ namespace MyMongoFramework
         public void ExecutionInterception( CommandStartedEvent e )
         {
                           
-              Console.WriteLine($"Query Interpretation: {e.CommandName}");
-              Console.WriteLine(e.Command.ToJson());              
+              log.Info($"Query Interpretation: {e.CommandName}");
+              log.Info(e.Command.ToJson());              
         }
         public void ExecuteSuccessInterception(CommandSucceededEvent e)
         {
