@@ -15,7 +15,7 @@ namespace MyCore2
     class Program
     {
         static CustomConfigurations Config = null;
-        private static readonly log4net.Core.ILogger log =  LoggingFactory.Logger(typeof(Program));
+        private static readonly log4net.Core.ILogger log =  LoggingFactory.Logger(typeof(Program)); //Opened in VS2017
         static void Main(string[] args)
         {
             log.Info("Our Program Started...");
