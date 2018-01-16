@@ -853,3 +853,34 @@ INFO  12:22:15 App Message - Query Interpretation: isMaster
 INFO  12:22:15 App Message - { "isMaster" : 1 }
 INFO  12:22:15 App Message - Query Interpretation: buildInfo
 INFO  12:22:15 App Message - { "buildInfo" : 1 }
+INFO  02:48:21 App Message - Our Program Started...
+INFO  02:48:23 App Message - Query Interpretation: isMaster
+INFO  02:48:23 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:48:23 App Message - Query Interpretation: buildInfo
+INFO  02:48:23 App Message - { "buildInfo" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: getLastError
+INFO  02:48:23 App Message - { "getLastError" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: isMaster
+INFO  02:48:23 App Message - { "isMaster" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: buildInfo
+INFO  02:48:23 App Message - { "buildInfo" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: isMaster
+INFO  02:48:23 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:48:23 App Message - Query Interpretation: buildInfo
+INFO  02:48:23 App Message - { "buildInfo" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: getLastError
+INFO  02:48:23 App Message - { "getLastError" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: listCollections
+INFO  02:48:23 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("39abc0d2-5db9-4e64-aee3-7203f1187a14") } }
+INFO  02:48:23 App Message - Query Interpretation: create
+INFO  02:48:23 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("39abc0d2-5db9-4e64-aee3-7203f1187a14") } }
+INFO  02:48:23 App Message - Collection already exists.
+INFO  02:48:23 App Message - Seeding to MongoDb is completed
+INFO  02:48:23 App Message - Query Interpretation: find
+INFO  02:48:23 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:48:23 App Message - Query Interpretation: find
+INFO  02:48:23 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "Group Instructor" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:48:23 App Message - Query Interpretation: isMaster
+INFO  02:48:23 App Message - { "isMaster" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: buildInfo
+INFO  02:48:23 App Message - { "buildInfo" : 1 }

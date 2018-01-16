@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 
 using MyMongoFramework;
 using LogConfigurations;
+using EntityFrwkEg.ConfigurationEntities;
 
 namespace MyCore2
 {
@@ -47,10 +48,13 @@ namespace MyCore2
         private static void TrySimpleMongoQuery()
         {
             var _config = Config.ConnectionStrings.MongoDb;
-            
-            MongoFrameworkCore _context = new MongoFrameworkCore( _config.Server, 
-                                                                  _config.Port,
-                                                                  _config.Database ) ;
+
+            //MongoFrameworkCore _context = new MongoFrameworkCore( _config.Server, 
+            //                                                      _config.Port,
+            //                                                      _config.Database ) ;
+
+            var _context = new MongoFrameworkCore(_config);
+
             _context.SeedMongoData();
 
 
@@ -119,34 +123,5 @@ namespace MyCore2
         }
     }
 
-    #region ^Configuration as per the appSettings.json file
-    public class CustomConfigurations
-    {
-        public ConnectionStrings ConnectionStrings { get; set;} = null;
-        public SmtpConfiguration Smtp {get; set;} = null;
-    }
-
-    public class ConnectionStrings
-    {
-        public string SqlConnection {get; set;} = string.Empty;
-        public MongoDb MongoDb {get;set; } = null;
-    }
-
-    public class MongoDb
-    {
-        public string ConnectionString {get {  return $"mongodb://{Server}:{Port}";  }}
-        public string Server {get; set;} = string.Empty;
-        public Int32 Port {get; set;} = 0;
-        public string Database {get; set;}= string.Empty;
-    }
-
-    public class SmtpConfiguration
-    {
-        public string Server { get; set; } = string.Empty; //1
-        public string User{ get; set; } = string.Empty;
-        public string Pass{ get; set; } = string.Empty;
-        public string Port{ get; set; } = string.Empty;
-        
-    }
-    #endregion ~Configuration as per the appSettings.json file - 1
+    
 }

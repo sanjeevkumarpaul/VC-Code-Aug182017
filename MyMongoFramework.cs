@@ -35,29 +35,32 @@ namespace MyMongoFramework
 
             //Old way connectivity
             //====================
-            //_server = new MongoServer( new MongoServerSettings()
-            //{ 
-            //    ConnectionMode = ConnectionMode.Automatic  ,
-            //    Server = new MongoServerAddress(server, port),
-            //    ClusterConfigurator = configure => 
-            //                          {
-            //                              configure.Subscribe<CommandStartedEvent>(e =>  ExecutionInterception(e) );
-            //                              configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
-            //                          }                                                
-            //});
-
-            //New way connectivity
-            //====================
-            var _set = MongoClientSettings.FromUrl(new MongoUrl($"mongodb://{server}:{port}"));
-            _set.ConnectionMode = ConnectionMode.Automatic;
-            _set.ClusterConfigurator = configure =>
+            _server = new MongoServer(new MongoServerSettings()
+            {
+                ConnectionMode = ConnectionMode.Automatic,
+                Server = new MongoServerAddress(server, port),
+                ClusterConfigurator = configure =>
                                       {
                                           configure.Subscribe<CommandStartedEvent>(e => ExecutionInterception(e));
                                           configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
-                                      };
-            _server = new MongoClient(_set).GetServer();
+                                      }
+            });
 
             _db = _server.GetDatabase(database);                
+        }
+
+        public MongoFrameworkCore(EntityFrwkEg.ConfigurationEntities.MongoDb config)
+        {
+            var _set = MongoClientSettings.FromUrl(new MongoUrl(config.ConnectionString));
+            _set.ConnectionMode = ConnectionMode.Automatic;
+            _set.ClusterConfigurator = configure =>
+            {
+                configure.Subscribe<CommandStartedEvent>(e => ExecutionInterception(e));
+                configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
+            };
+            _server = new MongoClient(_set).GetServer();
+
+            _db = _server.GetDatabase(config.Database);
         }
 
         public void ExecutionInterception( CommandStartedEvent e )
