@@ -6,6 +6,7 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
+using MongoDB.Driver.Core;
 using MongoDB.Driver.Linq;
 using MongoDB.Driver.Builders;
 using MongoDB.Driver.Core.Events;
@@ -14,12 +15,14 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 using LogConfigurations;
+using EntityFrwkEg.MongoDBEntities;
 
 namespace MyMongoFramework
 {
     public class MongoFrameworkCore 
     {
         private static readonly log4net.Core.ILogger log =  LoggingFactory.Logger(typeof(MongoFrameworkCore));
+        private static readonly string _document = "Zones";
         
         //MongoClient _client;
         MongoServer _server;
@@ -30,16 +33,29 @@ namespace MyMongoFramework
             //var db1Credential = MongoCredential.CreateMongoCRCredential("db1", "uid", "pwd");
             //var db2Credential = MongoCredential.CreateMongoCRCredential("db2", "uid", "pwd");
 
-            _server = new MongoServer( new MongoServerSettings()
-            { 
-                ConnectionMode = ConnectionMode.Automatic  ,
-                Server = new MongoServerAddress(server, port),
-                ClusterConfigurator = configure => 
+            //Old way connectivity
+            //====================
+            //_server = new MongoServer( new MongoServerSettings()
+            //{ 
+            //    ConnectionMode = ConnectionMode.Automatic  ,
+            //    Server = new MongoServerAddress(server, port),
+            //    ClusterConfigurator = configure => 
+            //                          {
+            //                              configure.Subscribe<CommandStartedEvent>(e =>  ExecutionInterception(e) );
+            //                              configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
+            //                          }                                                
+            //});
+
+            //New way connectivity
+            //====================
+            var _set = MongoClientSettings.FromUrl(new MongoUrl($"mongodb://{server}:{port}"));
+            _set.ConnectionMode = ConnectionMode.Automatic;
+            _set.ClusterConfigurator = configure =>
                                       {
-                                          configure.Subscribe<CommandStartedEvent>(e =>  ExecutionInterception(e) );
+                                          configure.Subscribe<CommandStartedEvent>(e => ExecutionInterception(e));
                                           configure.Subscribe<CommandSucceededEvent>(e => ExecuteSuccessInterception(e));
-                                      }                                                
-            });
+                                      };
+            _server = new MongoClient(_set).GetServer();
 
             _db = _server.GetDatabase(database);                
         }
@@ -61,7 +77,7 @@ namespace MyMongoFramework
         {
             if (_db != null)
             {
-                return _db.GetCollection<Zones>("Zones").FindAll();
+                return _db.GetCollection<Zones>(_document).FindAll();
             }
 
             return null;
@@ -74,10 +90,9 @@ namespace MyMongoFramework
                 //either way
                 //var query = Query.EQ("contribs","OOP" );
                 //or
-                var query = Query<Zones>.EQ(z =>  z.Contribs, "OOP" );
+                var query = Query<Zones>.EQ(z =>  z.Contribs, "Kanha Ka Bansuri");
                 
-                
-                return _db.GetCollection<Zones>("Zones").Find(query);
+                return _db.GetCollection<Zones>(_document).Find(query);
             }
 
             return null;
@@ -90,7 +105,7 @@ namespace MyMongoFramework
                 var query = Query<Zones>.EQ(z =>  z.name.First, "John" );
                 
                 //Excluding few fields.
-                return _db.GetCollection<Zones>("Zones").Find(query).SetFields(Fields<Zones>.Exclude(f => f.name.First,
+                return _db.GetCollection<Zones>(_document).Find(query).SetFields(Fields<Zones>.Exclude(f => f.name.First,
                                                                                                      f => f.Birth,
                                                                                                      f => f.Id )  );
             }
@@ -106,13 +121,13 @@ namespace MyMongoFramework
                 var query = queries.And( new List<IMongoQuery>
                                          { 
                                              Query<Zones>.EQ(z =>  z.name.First, "Kristen" ) ,
-                                             Query<Zones>.EQ(z => z.Contribs, "OOP")
+                                             Query<Zones>.EQ(z => z.Contribs, "Rosemary Garden")
                                          } );
                 query = queries.Or( query, Query<Zones>.ElemMatch(z => z.Awards, a => a.GT<double>( y => y.Year , 1971) ) ); //Element match requried for an Array.
 
                 //Excluding few fields.
-                return _db.GetCollection<Zones>("Zones").Find(query).SetFields(Fields<Zones>.Exclude(f => f.Birth,
-                                                                                                     f => f.Id )  );
+                return _db.GetCollection<Zones>(_document).Find(query).SetFields(Fields<Zones>.Exclude(f => f.Birth,
+                                                                                                     f => f.Id )  ); //Sets the fields which you want to return
             }
 
             return null;
@@ -122,7 +137,7 @@ namespace MyMongoFramework
         {
             if (_db != null)
             {
-                 var zones = _db.GetCollection<Zones>("Zones").AsQueryable();
+                 var zones = _db.GetCollection<Zones>(_document).AsQueryable();
                  
                  return zones.Where(z => z.name.First == "Kristen" );    //.Equals does not work instead use == always.
 
@@ -135,7 +150,7 @@ namespace MyMongoFramework
         {
             if (_db != null)
             {
-                 var zones = _db.GetCollection<Zones>("Zones").AsQueryable();
+                 var zones = _db.GetCollection<Zones>(_document).AsQueryable();
                  
                  return zones.Where(z => z.name.First != null).Skip(2).Take(4);    
 
@@ -143,89 +158,135 @@ namespace MyMongoFramework
 
             return null;
         }
-    }
 
-    //Serializer to convert any Value to String. This goes as an BsonSerializer Attribute to any Collection Field. 
-    public sealed class IDSerializer : SerializerBase<string>
-    {
-         public override string Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
-         {   
-            var bsonType = context.Reader.CurrentBsonType;
-            switch (bsonType)
+        public void UpdateOneAwardee(string firstName, string awardOldName, string awardNewName)
+        {
+            if (_db != null)
             {
-                case BsonType.Null:
-                    context.Reader.ReadNull();
-                    return null;
-                case BsonType.String:
-                    return context.Reader.ReadString().ToString();
-                case BsonType.Int32:
-                    return context.Reader.ReadInt32().ToString();
-                case BsonType.Double:
-                    return context.Reader.ReadDouble().ToString();
-                case BsonType.ObjectId:
-                    return context.Reader.ReadObjectId().ToString();
-                default:
-                    var message = string.Format("Cannot deserialize BsonString or BsonInt32 from BsonType {0}.", bsonType);
-                    throw new BsonSerializationException(message);
-           }
+                var _collection = _db.GetCollection<Zones>(_document);
+                var _query = Query<Zones>.EQ(z => z.name.First, firstName);
+                var zone =  _collection.FindOne(_query);
+
+                if (zone != null)
+                {
+                    var award = zone.Awards.Find(a => a.Award.Equals(awardOldName));
+                    award.Award = awardNewName;
+
+                    _collection.Save(zone);
+                }
+            }
         }
 
-        public override void Serialize(BsonSerializationContext context, BsonSerializationArgs args, string value)
-        {            
-            if (value != null)
-            {                
-                context.Writer.WriteString(value.ToString() );
-            }
-            else
+        public void UpdateAwardee(string firstName, string awardOldName, string awardNewName)
+        {
+            if (_db != null)
             {
-                context.Writer.WriteNull(); 
+                var queries = new QueryBuilder<Zones>();
+                var query = queries.And(new List<IMongoQuery>
+                {
+                     Query<Zones>.EQ(z =>  z.name.First, firstName ) ,
+                     Query<Zones>.ElemMatch(z => z.Awards, a => a.EQ( y => y.Award,  awardOldName))
+                });
+
+                var _collection = _db.GetCollection<Zones>(_document);
+
+                var zones = _collection.Find(query).ToList();
+
+                if (zones.Count > 0)
+                {
+                    zones.ForEach(a => a.Awards.Where(x => x.Award.Equals(awardOldName)).ToList().ForEach(b => { b.Award = awardNewName; }));
+
+                    zones.ForEach(z => { _collection.Save(z); });
+                }
             }
-       }
-}
+        }
 
+        public void SeedMongoData()
+        {
+            var options = CollectionOptions.SetCapped(false).SetMaxSize(5000).SetMaxDocuments(100);
 
-    //DOCUMENT TYPES (Nothing but Tables ...)
-    //Remember that all Element names at MongoDB collection must match with collection class field defined below.
-    //  Field name is matched via two ways . Either you specify BsonElement("<<exact case sensitive name>>") or name the field as Collection Item named at mongoDB just as name field below.
-    
-    [BsonIgnoreExtraElements]  //letting the deserialization know that the fields not in here are to be excluded. (eg. title field at mongo is excluded below)
-    public class Zones
-    {
-        [BsonId] //Denotes auto generated NOSQL Id.
-        [BsonSerializer(typeof( IDSerializer ))]   //Since _id in mongoDB contains various datatypes (nt just ObjectId, conversion is required while Serialization.)             
-        public string Id { get; set; }
-        
-        //[BsonElement("name")]
-        public Name name {get; set;}
-        [BsonElement("birth")]
-        public DateTime Birth {get; set;}
-        [BsonElement("death")]
-        public DateTime Death {get; set;}
-        [BsonElement("contribs")]
-        public string[] Contribs{get; set;}
-        [BsonElement("awards")]
-        public List<Awardee> Awards {get; set;}
+            if (_db.CollectionExists(_document))
+            {
+                //_db.DropCollection(_document);
 
+                try
+                {
+                    _db.CreateCollection(_document, options);
+
+                    var _col = _db.GetCollection(_document);
+                    _col.Insert<Zones>(new Zones
+                    {
+                        name = new Name { First = "John", Last = "Deen" },
+                        Birth = new DateTime(1880, 1, 10),
+                        Death = new DateTime(1956, 5, 17),
+                        Contribs = new string[] { "Insight Out", "Rosemary Garden", "I Am Your Friend" },
+                        Awards = new List<Awardee>
+                    {
+                        new Awardee { Award = "IFA", By="Doordarshan", Year = 1921 },
+                        new Awardee { Award = "STAR CINI", By="Star", Year = 1923 },
+                        new Awardee { Award = "ZEE PROVISONAL", By="Zee", Year = 1930 }
+                    }
+                    });
+
+                    _col.Insert<Zones>(new Zones
+                    {
+                        Id = "Ind_1",
+                        name = new Name { First = "Nidhi", Last = "Bansal" },
+                        Birth = new DateTime(1820, 3, 11),
+                        Death = new DateTime(1943, 2, 21),
+                        Contribs = new string[] { "Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri" },
+                        Awards = new List<Awardee>
+                    {
+                        new Awardee { Award = "OSCAR", By="Hollywood", Year = 1922 },
+                        new Awardee { Award = "TECHNICAL CARTOONIST", By="Star", Year = 1926 },
+                        new Awardee { Award = "COREOGRAPHY", By="Zee", Year = 1942 }
+                    }
+                    });
+
+                    _col.Insert<Zones>(new Zones
+                    {
+                        Id = "Hld_1",
+                        name = new Name { First = "Kristen", Last = "Lopher" },
+                        Birth = new DateTime(1870, 7, 9),
+                        Death = new DateTime(1938, 7, 17),
+                        Contribs = new string[] { "Rendeer In My Pond", "Rosemary Garden", "Whos is there?" },
+                        Awards = new List<Awardee>
+                    {
+                        new Awardee { Award = "HOLLESTER", By="Hgtv", Year = 1918 },
+                        new Awardee { Award = "STAR CINI", By="Star", Year = 1923 },
+                        new Awardee { Award = "OSCAR", By="Hollywood", Year = 1936 }
+                    }
+                    });
+
+                    _col.Insert<Zones>(new Zones
+                    {
+                        Id = "Ind_2",
+                        name = new Name { First = "Rammohan", Last = "Basu" },
+                        Birth = new DateTime(1923, 4, 30),
+                        Death = new DateTime(1980, 3, 11),
+                        Contribs = new string[] { "Pani Ki Pehali Boond", "My Lawn", "Please, Forget Me" },
+                        Awards = new List<Awardee>
+                    {
+                        new Awardee { Award = "Fimfare", By="Bollywood", Year = 1952 },
+                        new Awardee { Award = "Bharat Ratna", By="Govt Of India", Year = 1971 }
+                    }
+                    });
+                }
+                catch (MongoException e)
+                {
+                    log.Info("Collection already exists.");                    
+                }
+                catch(Exception e)
+                {
+                    log.Info("Error - ");
+                    log.Error(e);
+                }
+                finally
+                {
+                    log.Info("Seeding to MongoDb is completed");
+                }
+            }
+        }
     }
 
-    [BsonIgnoreExtraElements]
-    public class Name
-    {
-        [BsonElement("first")]
-        public string First { get; set; }
-        [BsonElement("last")]
-        public string Last { get; set;}
-    }
-
-    [BsonIgnoreExtraElements]
-    public class Awardee
-    {
-        [BsonElement("award")]
-        public string Award {get; set;}
-        [BsonElement("year")]
-        public double Year {get; set;}
-        [BsonElement("by")]
-        public string By {get; set;}
-
-    }
 }

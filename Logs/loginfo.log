@@ -36,3 +36,820 @@ INFO  03:42:40 App Message - Query Interpretation: getLastError
 INFO  03:42:40 App Message - { "getLastError" : 1 }
 INFO  03:42:40 App Message - Query Interpretation: find
 INFO  03:42:40 App Message - { "find" : "Zones", "filter" : { "name.first" : { "$ne" : null } }, "skip" : 2, "limit" : 4, "noCursorTimeout" : false }
+INFO  07:03:36 App Message - Our Program Started...
+INFO  07:04:28 App Message - Our Program Started...
+INFO  02:23:20 App Message - Our Program Started...
+INFO  02:29:59 App Message - Our Program Started...
+INFO  02:30:06 App Message - Query Interpretation: isMaster
+INFO  02:30:06 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:30:07 App Message - Query Interpretation: buildInfo
+INFO  02:30:07 App Message - { "buildInfo" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: getLastError
+INFO  02:30:07 App Message - { "getLastError" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: isMaster
+INFO  02:30:07 App Message - { "isMaster" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: buildInfo
+INFO  02:30:07 App Message - { "buildInfo" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: isMaster
+INFO  02:30:07 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:30:07 App Message - Query Interpretation: buildInfo
+INFO  02:30:07 App Message - { "buildInfo" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: getLastError
+INFO  02:30:07 App Message - { "getLastError" : 1 }
+INFO  02:30:07 App Message - Query Interpretation: listCollections
+INFO  02:30:07 App Message - { "listCollections" : 1 }
+INFO  02:30:08 App Message - Query Interpretation: create
+INFO  02:30:08 App Message - { "create" : "Zones", "capped" : true, "size" : NumberLong(5000), "max" : NumberLong(100), "writeConcern" : { "w" : 0 } }
+INFO  02:39:56 App Message - Our Program Started...
+INFO  02:40:07 App Message - Query Interpretation: isMaster
+INFO  02:40:07 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:40:07 App Message - Query Interpretation: buildInfo
+INFO  02:40:07 App Message - { "buildInfo" : 1 }
+INFO  02:40:07 App Message - Query Interpretation: getLastError
+INFO  02:40:07 App Message - { "getLastError" : 1 }
+INFO  02:40:07 App Message - Query Interpretation: isMaster
+INFO  02:40:07 App Message - { "isMaster" : 1 }
+INFO  02:40:07 App Message - Query Interpretation: buildInfo
+INFO  02:40:07 App Message - { "buildInfo" : 1 }
+INFO  02:40:08 App Message - Query Interpretation: isMaster
+INFO  02:40:08 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:40:08 App Message - Query Interpretation: buildInfo
+INFO  02:40:08 App Message - { "buildInfo" : 1 }
+INFO  02:40:08 App Message - Query Interpretation: getLastError
+INFO  02:40:08 App Message - { "getLastError" : 1 }
+INFO  02:40:08 App Message - Query Interpretation: insert
+INFO  02:40:08 App Message - { "insert" : "Zones", "documents" : [{ "_id" : null, "name" : { "first" : "John", "last" : "Deen" }, "birth" : ISODate("1880-01-10T05:00:00Z"), "death" : ISODate("1956-05-17T04:00:00Z"), "contribs" : ["Insight Out", "Rosemary Garden", "I Am Your Friend"], "awards" : [{ "award" : "IFA", "year" : 1921.0, "by" : "Doordarshan" }, { "award" : "STAR CINI", "year" : 1923.0, "by" : "Star" }, { "award" : "ZEE PROVISONAL", "year" : 1930.0, "by" : "Zee" }] }], "ordered" : true, "writeConcern" : { "w" : 1 } }
+INFO  02:45:47 App Message - Our Program Started...
+INFO  02:46:02 App Message - Query Interpretation: isMaster
+INFO  02:46:02 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:46:02 App Message - Query Interpretation: buildInfo
+INFO  02:46:02 App Message - { "buildInfo" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: getLastError
+INFO  02:46:02 App Message - { "getLastError" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: isMaster
+INFO  02:46:02 App Message - { "isMaster" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: buildInfo
+INFO  02:46:02 App Message - { "buildInfo" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: isMaster
+INFO  02:46:02 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:46:02 App Message - Query Interpretation: buildInfo
+INFO  02:46:02 App Message - { "buildInfo" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: getLastError
+INFO  02:46:02 App Message - { "getLastError" : 1 }
+INFO  02:46:02 App Message - Query Interpretation: insert
+INFO  02:46:02 App Message - { "insert" : "Zones", "documents" : [{ "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "TECHNICAL CARTOONIST", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }], "ordered" : true, "writeConcern" : { "w" : 1 } }
+INFO  02:47:29 App Message - Our Program Started...
+INFO  02:47:30 App Message - Query Interpretation: isMaster
+INFO  02:47:30 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:47:30 App Message - Query Interpretation: buildInfo
+INFO  02:47:30 App Message - { "buildInfo" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: getLastError
+INFO  02:47:30 App Message - { "getLastError" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: isMaster
+INFO  02:47:30 App Message - { "isMaster" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: buildInfo
+INFO  02:47:30 App Message - { "buildInfo" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: isMaster
+INFO  02:47:30 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:47:30 App Message - Query Interpretation: buildInfo
+INFO  02:47:30 App Message - { "buildInfo" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: getLastError
+INFO  02:47:30 App Message - { "getLastError" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: listCollections
+INFO  02:47:30 App Message - { "listCollections" : 1 }
+INFO  02:47:30 App Message - Query Interpretation: find
+INFO  02:47:30 App Message - { "find" : "Zones", "filter" : { }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:48:21 App Message - Our Program Started...
+INFO  02:48:22 App Message - Query Interpretation: isMaster
+INFO  02:48:22 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:48:22 App Message - Query Interpretation: buildInfo
+INFO  02:48:22 App Message - { "buildInfo" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: getLastError
+INFO  02:48:22 App Message - { "getLastError" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: isMaster
+INFO  02:48:22 App Message - { "isMaster" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: buildInfo
+INFO  02:48:22 App Message - { "buildInfo" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: isMaster
+INFO  02:48:22 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:48:22 App Message - Query Interpretation: buildInfo
+INFO  02:48:22 App Message - { "buildInfo" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: getLastError
+INFO  02:48:22 App Message - { "getLastError" : 1 }
+INFO  02:48:22 App Message - Query Interpretation: listCollections
+INFO  02:48:22 App Message - { "listCollections" : 1 }
+INFO  02:48:23 App Message - Query Interpretation: find
+INFO  02:48:23 App Message - { "find" : "Zones", "filter" : { }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:48:32 App Message - Query Interpretation: isMaster
+INFO  02:48:32 App Message - { "isMaster" : 1 }
+INFO  02:48:32 App Message - Query Interpretation: buildInfo
+INFO  02:48:32 App Message - { "buildInfo" : 1 }
+INFO  02:49:40 App Message - Our Program Started...
+INFO  02:49:41 App Message - Query Interpretation: isMaster
+INFO  02:49:41 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:49:41 App Message - Query Interpretation: buildInfo
+INFO  02:49:41 App Message - { "buildInfo" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: getLastError
+INFO  02:49:41 App Message - { "getLastError" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: isMaster
+INFO  02:49:41 App Message - { "isMaster" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: buildInfo
+INFO  02:49:41 App Message - { "buildInfo" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: isMaster
+INFO  02:49:41 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:49:41 App Message - Query Interpretation: buildInfo
+INFO  02:49:41 App Message - { "buildInfo" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: getLastError
+INFO  02:49:41 App Message - { "getLastError" : 1 }
+INFO  02:49:41 App Message - Query Interpretation: listCollections
+INFO  02:49:41 App Message - { "listCollections" : 1 }
+INFO  02:49:42 App Message - Query Interpretation: find
+INFO  02:49:42 App Message - { "find" : "Zones", "filter" : { "contribs" : "Dhoop" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:49:51 App Message - Query Interpretation: isMaster
+INFO  02:49:51 App Message - { "isMaster" : 1 }
+INFO  02:49:51 App Message - Query Interpretation: buildInfo
+INFO  02:49:51 App Message - { "buildInfo" : 1 }
+INFO  02:50:57 App Message - Our Program Started...
+INFO  02:50:58 App Message - Query Interpretation: isMaster
+INFO  02:50:58 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:50:58 App Message - Query Interpretation: buildInfo
+INFO  02:50:58 App Message - { "buildInfo" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: getLastError
+INFO  02:50:58 App Message - { "getLastError" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: isMaster
+INFO  02:50:58 App Message - { "isMaster" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: buildInfo
+INFO  02:50:58 App Message - { "buildInfo" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: isMaster
+INFO  02:50:58 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:50:58 App Message - Query Interpretation: buildInfo
+INFO  02:50:58 App Message - { "buildInfo" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: getLastError
+INFO  02:50:58 App Message - { "getLastError" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: listCollections
+INFO  02:50:58 App Message - { "listCollections" : 1 }
+INFO  02:50:58 App Message - Query Interpretation: find
+INFO  02:50:58 App Message - { "find" : "Zones", "filter" : { "contribs" : "Kanha Ka Bansuri" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:48:31 App Message - Our Program Started...
+INFO  11:48:32 App Message - Query Interpretation: isMaster
+INFO  11:48:32 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:48:32 App Message - Query Interpretation: buildInfo
+INFO  11:48:32 App Message - { "buildInfo" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: getLastError
+INFO  11:48:32 App Message - { "getLastError" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: isMaster
+INFO  11:48:32 App Message - { "isMaster" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: buildInfo
+INFO  11:48:32 App Message - { "buildInfo" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: isMaster
+INFO  11:48:32 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:48:32 App Message - Query Interpretation: buildInfo
+INFO  11:48:32 App Message - { "buildInfo" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: getLastError
+INFO  11:48:32 App Message - { "getLastError" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: listCollections
+INFO  11:48:32 App Message - { "listCollections" : 1 }
+INFO  11:48:32 App Message - Query Interpretation: find
+INFO  11:48:32 App Message - { "find" : "Zones", "filter" : { "name.first" : "John" }, "projection" : { "name.first" : 0, "birth" : 0, "_id" : 0 }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:48:42 App Message - Query Interpretation: isMaster
+INFO  11:48:42 App Message - { "isMaster" : 1 }
+INFO  11:48:42 App Message - Query Interpretation: buildInfo
+INFO  11:48:42 App Message - { "buildInfo" : 1 }
+INFO  11:50:38 App Message - Our Program Started...
+INFO  11:50:39 App Message - Query Interpretation: isMaster
+INFO  11:50:39 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:50:39 App Message - Query Interpretation: buildInfo
+INFO  11:50:39 App Message - { "buildInfo" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: getLastError
+INFO  11:50:39 App Message - { "getLastError" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: isMaster
+INFO  11:50:39 App Message - { "isMaster" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: buildInfo
+INFO  11:50:39 App Message - { "buildInfo" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: isMaster
+INFO  11:50:39 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:50:39 App Message - Query Interpretation: buildInfo
+INFO  11:50:39 App Message - { "buildInfo" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: getLastError
+INFO  11:50:39 App Message - { "getLastError" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: listCollections
+INFO  11:50:39 App Message - { "listCollections" : 1 }
+INFO  11:50:39 App Message - Query Interpretation: find
+INFO  11:50:39 App Message - { "find" : "Zones", "filter" : { "name.first" : "John" }, "projection" : { "name.first" : 0, "birth" : 0, "_id" : 0 }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:50:49 App Message - Query Interpretation: isMaster
+INFO  11:50:49 App Message - { "isMaster" : 1 }
+INFO  11:50:49 App Message - Query Interpretation: buildInfo
+INFO  11:50:49 App Message - { "buildInfo" : 1 }
+INFO  09:24:30 App Message - Our Program Started...
+INFO  09:24:31 App Message - Query Interpretation: isMaster
+INFO  09:24:31 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  09:24:31 App Message - Query Interpretation: buildInfo
+INFO  09:24:31 App Message - { "buildInfo" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: getLastError
+INFO  09:24:31 App Message - { "getLastError" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: isMaster
+INFO  09:24:31 App Message - { "isMaster" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: buildInfo
+INFO  09:24:31 App Message - { "buildInfo" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: isMaster
+INFO  09:24:31 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  09:24:31 App Message - Query Interpretation: buildInfo
+INFO  09:24:31 App Message - { "buildInfo" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: getLastError
+INFO  09:24:31 App Message - { "getLastError" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: listCollections
+INFO  09:24:31 App Message - { "listCollections" : 1 }
+INFO  09:24:31 App Message - Query Interpretation: insert
+INFO  09:24:31 App Message - { "insert" : "Zones", "documents" : [{ "_id" : "Hld_1", "name" : { "first" : "Kristen", "last" : "Lopher" }, "birth" : ISODate("1870-07-09T04:00:00Z"), "death" : ISODate("1938-07-17T04:00:00Z"), "contribs" : ["Rendeer In My Pond", "Rosemary Garden", "Whos is there?"], "awards" : [{ "award" : "HOLLESTER", "year" : 1918.0, "by" : "Hgtv" }, { "award" : "STAR CINI", "year" : 1923.0, "by" : "Star" }, { "award" : "OSCAR", "year" : 1936.0, "by" : "Hollywood" }] }], "ordered" : true, "writeConcern" : { "w" : 1 } }
+INFO  09:24:31 App Message - Query Interpretation: find
+INFO  09:24:31 App Message - { "find" : "Zones", "filter" : { "$or" : [{ "name.first" : "Kristen", "contribs" : "Rosemary Garden" }, { "awards" : { "$elemMatch" : { "year" : { "$gt" : 1971.0 } } } }] }, "projection" : { "birth" : 0, "_id" : 0 }, "skip" : 0, "noCursorTimeout" : false }
+INFO  09:46:28 App Message - Our Program Started...
+INFO  09:46:29 App Message - Query Interpretation: isMaster
+INFO  09:46:29 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  09:46:29 App Message - Query Interpretation: buildInfo
+INFO  09:46:29 App Message - { "buildInfo" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: getLastError
+INFO  09:46:29 App Message - { "getLastError" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: isMaster
+INFO  09:46:29 App Message - { "isMaster" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: buildInfo
+INFO  09:46:29 App Message - { "buildInfo" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: isMaster
+INFO  09:46:29 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  09:46:29 App Message - Query Interpretation: buildInfo
+INFO  09:46:29 App Message - { "buildInfo" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: getLastError
+INFO  09:46:29 App Message - { "getLastError" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: listCollections
+INFO  09:46:29 App Message - { "listCollections" : 1 }
+INFO  09:46:29 App Message - Query Interpretation: insert
+INFO  09:46:29 App Message - { "insert" : "Zones", "documents" : [{ "_id" : "Ind_2", "name" : { "first" : "Rammohan", "last" : "Basu" }, "birth" : ISODate("1923-04-30T04:00:00Z"), "death" : ISODate("1980-03-11T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "My Lawn", "Please, Forget Me"], "awards" : [{ "award" : "Fimfare", "year" : 1952.0, "by" : "Bollywood" }, { "award" : "Bharat Ratna", "year" : 1971.0, "by" : "Govt Of India" }] }], "ordered" : true, "writeConcern" : { "w" : 1 } }
+INFO  09:46:30 App Message - Query Interpretation: find
+INFO  09:46:30 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:52:55 App Message - Our Program Started...
+INFO  11:54:36 App Message - Our Program Started...
+INFO  11:54:46 App Message - Query Interpretation: isMaster
+INFO  11:54:46 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:54:46 App Message - Query Interpretation: buildInfo
+INFO  11:54:46 App Message - { "buildInfo" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: getLastError
+INFO  11:54:46 App Message - { "getLastError" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: isMaster
+INFO  11:54:46 App Message - { "isMaster" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: buildInfo
+INFO  11:54:46 App Message - { "buildInfo" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: isMaster
+INFO  11:54:46 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:54:46 App Message - Query Interpretation: buildInfo
+INFO  11:54:46 App Message - { "buildInfo" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: getLastError
+INFO  11:54:46 App Message - { "getLastError" : 1 }
+INFO  11:54:46 App Message - Query Interpretation: listCollections
+INFO  11:54:46 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("036a2f2b-651d-44c7-adf5-156aebfc3487") } }
+INFO  11:54:46 App Message - Query Interpretation: find
+INFO  11:54:46 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:54:49 App Message - Query Interpretation: isMaster
+INFO  11:54:49 App Message - { "isMaster" : 1 }
+INFO  11:54:49 App Message - Query Interpretation: buildInfo
+INFO  11:54:49 App Message - { "buildInfo" : 1 }
+INFO  02:49:58 App Message - Our Program Started...
+INFO  02:49:59 App Message - Query Interpretation: isMaster
+INFO  02:49:59 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:49:59 App Message - Query Interpretation: buildInfo
+INFO  02:49:59 App Message - { "buildInfo" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: getLastError
+INFO  02:49:59 App Message - { "getLastError" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: isMaster
+INFO  02:49:59 App Message - { "isMaster" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: buildInfo
+INFO  02:49:59 App Message - { "buildInfo" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: isMaster
+INFO  02:49:59 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:49:59 App Message - Query Interpretation: buildInfo
+INFO  02:49:59 App Message - { "buildInfo" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: getLastError
+INFO  02:49:59 App Message - { "getLastError" : 1 }
+INFO  02:49:59 App Message - Query Interpretation: listCollections
+INFO  02:49:59 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("162e365e-1740-4da3-aa21-506cddb8f4d4") } }
+INFO  02:50:00 App Message - Query Interpretation: find
+INFO  02:50:00 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:50:07 App Message - Query Interpretation: find
+INFO  02:50:07 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "Technical Cartoonist" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:50:21 App Message - Query Interpretation: isMaster
+INFO  02:50:21 App Message - { "isMaster" : 1 }
+INFO  02:50:21 App Message - Query Interpretation: buildInfo
+INFO  02:50:21 App Message - { "buildInfo" : 1 }
+INFO  02:51:53 App Message - Our Program Started...
+INFO  02:51:55 App Message - Query Interpretation: isMaster
+INFO  02:51:55 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:51:55 App Message - Query Interpretation: buildInfo
+INFO  02:51:55 App Message - { "buildInfo" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: getLastError
+INFO  02:51:55 App Message - { "getLastError" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: isMaster
+INFO  02:51:55 App Message - { "isMaster" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: buildInfo
+INFO  02:51:55 App Message - { "buildInfo" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: isMaster
+INFO  02:51:55 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  02:51:55 App Message - Query Interpretation: buildInfo
+INFO  02:51:55 App Message - { "buildInfo" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: getLastError
+INFO  02:51:55 App Message - { "getLastError" : 1 }
+INFO  02:51:55 App Message - Query Interpretation: listCollections
+INFO  02:51:55 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("9262e395-300b-45b4-b9f1-a86120907ec5") } }
+INFO  02:51:55 App Message - Query Interpretation: find
+INFO  02:51:55 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:51:59 App Message - Query Interpretation: find
+INFO  02:51:59 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "TECHNICAL CARTOONIST" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  02:52:08 App Message - Query Interpretation: isMaster
+INFO  02:52:08 App Message - { "isMaster" : 1 }
+INFO  02:52:08 App Message - Query Interpretation: buildInfo
+INFO  02:52:08 App Message - { "buildInfo" : 1 }
+INFO  02:52:23 App Message - Query Interpretation: isMaster
+INFO  02:52:23 App Message - { "isMaster" : 1 }
+INFO  02:52:23 App Message - Query Interpretation: buildInfo
+INFO  02:52:23 App Message - { "buildInfo" : 1 }
+INFO  04:49:38 App Message - Our Program Started...
+INFO  04:49:39 App Message - Query Interpretation: isMaster
+INFO  04:49:39 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:49:39 App Message - Query Interpretation: buildInfo
+INFO  04:49:39 App Message - { "buildInfo" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: getLastError
+INFO  04:49:39 App Message - { "getLastError" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: isMaster
+INFO  04:49:39 App Message - { "isMaster" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: buildInfo
+INFO  04:49:39 App Message - { "buildInfo" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: isMaster
+INFO  04:49:39 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:49:39 App Message - Query Interpretation: buildInfo
+INFO  04:49:39 App Message - { "buildInfo" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: getLastError
+INFO  04:49:39 App Message - { "getLastError" : 1 }
+INFO  04:49:39 App Message - Query Interpretation: listCollections
+INFO  04:49:39 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("df11154d-0aa4-401f-8214-9ef2dd29c39f") } }
+INFO  04:49:39 App Message - Query Interpretation: find
+INFO  04:49:39 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:50:29 App Message - Query Interpretation: isMaster
+INFO  04:50:29 App Message - { "isMaster" : 1 }
+INFO  04:50:29 App Message - Query Interpretation: buildInfo
+INFO  04:50:29 App Message - { "buildInfo" : 1 }
+INFO  04:50:32 App Message - Query Interpretation: find
+INFO  04:50:32 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "TECHNICAL CARTOONIST" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:52:23 App Message - Our Program Started...
+INFO  04:52:24 App Message - Query Interpretation: isMaster
+INFO  04:52:24 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:52:24 App Message - Query Interpretation: buildInfo
+INFO  04:52:24 App Message - { "buildInfo" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: getLastError
+INFO  04:52:24 App Message - { "getLastError" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: isMaster
+INFO  04:52:24 App Message - { "isMaster" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: buildInfo
+INFO  04:52:24 App Message - { "buildInfo" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: isMaster
+INFO  04:52:24 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:52:24 App Message - Query Interpretation: buildInfo
+INFO  04:52:24 App Message - { "buildInfo" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: getLastError
+INFO  04:52:24 App Message - { "getLastError" : 1 }
+INFO  04:52:24 App Message - Query Interpretation: listCollections
+INFO  04:52:24 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("95f7ecc0-2655-4923-b02c-4d5d4d2bc3e4") } }
+INFO  04:52:24 App Message - Query Interpretation: find
+INFO  04:52:24 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:52:31 App Message - Query Interpretation: find
+INFO  04:52:31 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "TECHNICAL CARTOONIST" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:55:39 App Message - Our Program Started...
+INFO  04:55:40 App Message - Query Interpretation: isMaster
+INFO  04:55:40 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:55:40 App Message - Query Interpretation: buildInfo
+INFO  04:55:40 App Message - { "buildInfo" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: getLastError
+INFO  04:55:40 App Message - { "getLastError" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: isMaster
+INFO  04:55:40 App Message - { "isMaster" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: buildInfo
+INFO  04:55:40 App Message - { "buildInfo" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: isMaster
+INFO  04:55:40 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:55:40 App Message - Query Interpretation: buildInfo
+INFO  04:55:40 App Message - { "buildInfo" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: getLastError
+INFO  04:55:40 App Message - { "getLastError" : 1 }
+INFO  04:55:40 App Message - Query Interpretation: listCollections
+INFO  04:55:40 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("7fad28f5-ca9e-493c-b4ac-57f0a1fdfbac") } }
+INFO  04:55:41 App Message - Query Interpretation: find
+INFO  04:55:41 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:55:41 App Message - Query Interpretation: find
+INFO  04:55:41 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "TECHNICAL CARTOONIST" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:55:47 App Message - Query Interpretation: update
+INFO  04:55:47 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  04:58:16 App Message - Our Program Started...
+INFO  04:58:17 App Message - Query Interpretation: isMaster
+INFO  04:58:17 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:58:17 App Message - Query Interpretation: buildInfo
+INFO  04:58:17 App Message - { "buildInfo" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: getLastError
+INFO  04:58:17 App Message - { "getLastError" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: isMaster
+INFO  04:58:17 App Message - { "isMaster" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: buildInfo
+INFO  04:58:17 App Message - { "buildInfo" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: isMaster
+INFO  04:58:17 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  04:58:17 App Message - Query Interpretation: buildInfo
+INFO  04:58:17 App Message - { "buildInfo" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: getLastError
+INFO  04:58:17 App Message - { "getLastError" : 1 }
+INFO  04:58:17 App Message - Query Interpretation: listCollections
+INFO  04:58:17 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("bdaa6b4f-32fd-4eda-a49a-3a856d5623c5") } }
+INFO  04:58:17 App Message - Query Interpretation: find
+INFO  04:58:17 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  04:58:18 App Message - Query Interpretation: find
+INFO  04:58:18 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "TECHNICAL CARTOONIST" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  05:05:07 App Message - Our Program Started...
+INFO  05:05:08 App Message - Query Interpretation: isMaster
+INFO  05:05:08 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:05:08 App Message - Query Interpretation: buildInfo
+INFO  05:05:08 App Message - { "buildInfo" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: getLastError
+INFO  05:05:08 App Message - { "getLastError" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: isMaster
+INFO  05:05:08 App Message - { "isMaster" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: buildInfo
+INFO  05:05:08 App Message - { "buildInfo" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: isMaster
+INFO  05:05:08 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:05:08 App Message - Query Interpretation: buildInfo
+INFO  05:05:08 App Message - { "buildInfo" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: getLastError
+INFO  05:05:08 App Message - { "getLastError" : 1 }
+INFO  05:05:08 App Message - Query Interpretation: listCollections
+INFO  05:05:08 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("678daab2-1c37-450f-a72f-af0d05f9eea8") } }
+INFO  05:05:08 App Message - Query Interpretation: find
+INFO  05:05:08 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  05:05:08 App Message - Query Interpretation: find
+INFO  05:05:08 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  05:07:58 App Message - Our Program Started...
+INFO  05:07:59 App Message - Query Interpretation: isMaster
+INFO  05:07:59 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:07:59 App Message - Query Interpretation: buildInfo
+INFO  05:07:59 App Message - { "buildInfo" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: getLastError
+INFO  05:07:59 App Message - { "getLastError" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: isMaster
+INFO  05:07:59 App Message - { "isMaster" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: buildInfo
+INFO  05:07:59 App Message - { "buildInfo" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: isMaster
+INFO  05:07:59 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:07:59 App Message - Query Interpretation: buildInfo
+INFO  05:07:59 App Message - { "buildInfo" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: getLastError
+INFO  05:07:59 App Message - { "getLastError" : 1 }
+INFO  05:07:59 App Message - Query Interpretation: listCollections
+INFO  05:07:59 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("b88db58d-9253-4327-9ea1-0a438c56d643") } }
+INFO  05:07:59 App Message - Query Interpretation: find
+INFO  05:07:59 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  05:07:59 App Message - Query Interpretation: find
+INFO  05:07:59 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  05:08:18 App Message - Our Program Started...
+INFO  05:08:19 App Message - Query Interpretation: isMaster
+INFO  05:08:19 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:08:19 App Message - Query Interpretation: buildInfo
+INFO  05:08:19 App Message - { "buildInfo" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: getLastError
+INFO  05:08:19 App Message - { "getLastError" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: isMaster
+INFO  05:08:19 App Message - { "isMaster" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: buildInfo
+INFO  05:08:19 App Message - { "buildInfo" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: isMaster
+INFO  05:08:19 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  05:08:19 App Message - Query Interpretation: buildInfo
+INFO  05:08:19 App Message - { "buildInfo" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: getLastError
+INFO  05:08:19 App Message - { "getLastError" : 1 }
+INFO  05:08:19 App Message - Query Interpretation: listCollections
+INFO  05:08:19 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("08c8246f-34c1-4006-bfdf-ffadb6908500") } }
+INFO  05:08:19 App Message - Query Interpretation: find
+INFO  05:08:19 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  05:08:20 App Message - Query Interpretation: find
+INFO  05:08:20 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  05:08:22 App Message - Query Interpretation: update
+INFO  05:08:22 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  10:24:42 App Message - Our Program Started...
+INFO  10:24:43 App Message - Query Interpretation: isMaster
+INFO  10:24:43 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  10:24:43 App Message - Query Interpretation: buildInfo
+INFO  10:24:43 App Message - { "buildInfo" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: getLastError
+INFO  10:24:43 App Message - { "getLastError" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: isMaster
+INFO  10:24:43 App Message - { "isMaster" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: buildInfo
+INFO  10:24:43 App Message - { "buildInfo" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: isMaster
+INFO  10:24:43 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  10:24:43 App Message - Query Interpretation: buildInfo
+INFO  10:24:43 App Message - { "buildInfo" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: getLastError
+INFO  10:24:43 App Message - { "getLastError" : 1 }
+INFO  10:24:43 App Message - Query Interpretation: listCollections
+INFO  10:24:43 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("0b3f8a93-4f28-4dc7-8cd8-ed423d9906e3") } }
+INFO  10:24:44 App Message - Query Interpretation: find
+INFO  10:24:44 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  10:24:44 App Message - Query Interpretation: find
+INFO  10:24:44 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  10:24:52 App Message - Query Interpretation: update
+INFO  10:24:53 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  10:55:12 App Message - Our Program Started...
+INFO  10:55:13 App Message - Query Interpretation: isMaster
+INFO  10:55:13 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  10:55:13 App Message - Query Interpretation: buildInfo
+INFO  10:55:13 App Message - { "buildInfo" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: getLastError
+INFO  10:55:13 App Message - { "getLastError" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: isMaster
+INFO  10:55:13 App Message - { "isMaster" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: buildInfo
+INFO  10:55:13 App Message - { "buildInfo" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: isMaster
+INFO  10:55:13 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  10:55:13 App Message - Query Interpretation: buildInfo
+INFO  10:55:13 App Message - { "buildInfo" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: getLastError
+INFO  10:55:13 App Message - { "getLastError" : 1 }
+INFO  10:55:13 App Message - Query Interpretation: listCollections
+INFO  10:55:13 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("461fffea-3c6b-475a-9afe-c1eaecfe56cf") } }
+INFO  10:55:13 App Message - Query Interpretation: find
+INFO  10:55:13 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  10:55:13 App Message - Query Interpretation: find
+INFO  10:55:13 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  10:55:24 App Message - Query Interpretation: isMaster
+INFO  10:55:24 App Message - { "isMaster" : 1 }
+INFO  10:55:24 App Message - Query Interpretation: buildInfo
+INFO  10:55:24 App Message - { "buildInfo" : 1 }
+INFO  10:55:24 App Message - Query Interpretation: update
+INFO  10:55:24 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  11:05:40 App Message - Our Program Started...
+INFO  11:05:41 App Message - Query Interpretation: isMaster
+INFO  11:05:41 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:05:41 App Message - Query Interpretation: buildInfo
+INFO  11:05:41 App Message - { "buildInfo" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: getLastError
+INFO  11:05:41 App Message - { "getLastError" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: isMaster
+INFO  11:05:41 App Message - { "isMaster" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: buildInfo
+INFO  11:05:41 App Message - { "buildInfo" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: isMaster
+INFO  11:05:41 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:05:41 App Message - Query Interpretation: buildInfo
+INFO  11:05:41 App Message - { "buildInfo" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: getLastError
+INFO  11:05:41 App Message - { "getLastError" : 1 }
+INFO  11:05:41 App Message - Query Interpretation: listCollections
+INFO  11:05:41 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("f020c87b-6734-48cf-9a45-47810108261c") } }
+INFO  11:05:41 App Message - Query Interpretation: find
+INFO  11:05:41 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:05:41 App Message - Query Interpretation: find
+INFO  11:05:41 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  11:05:44 App Message - Query Interpretation: update
+INFO  11:05:44 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  11:06:00 App Message - Query Interpretation: isMaster
+INFO  11:06:00 App Message - { "isMaster" : 1 }
+INFO  11:06:00 App Message - Query Interpretation: buildInfo
+INFO  11:06:00 App Message - { "buildInfo" : 1 }
+INFO  11:39:08 App Message - Our Program Started...
+INFO  11:39:09 App Message - Query Interpretation: isMaster
+INFO  11:39:09 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:39:09 App Message - Query Interpretation: buildInfo
+INFO  11:39:09 App Message - { "buildInfo" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: getLastError
+INFO  11:39:09 App Message - { "getLastError" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: isMaster
+INFO  11:39:09 App Message - { "isMaster" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: buildInfo
+INFO  11:39:09 App Message - { "buildInfo" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: isMaster
+INFO  11:39:09 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:39:09 App Message - Query Interpretation: buildInfo
+INFO  11:39:09 App Message - { "buildInfo" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: getLastError
+INFO  11:39:09 App Message - { "getLastError" : 1 }
+INFO  11:39:09 App Message - Query Interpretation: listCollections
+INFO  11:39:09 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("cb268a6a-b5dc-4453-84e1-563a73cffb81") } }
+INFO  11:39:09 App Message - Query Interpretation: drop
+INFO  11:39:09 App Message - { "drop" : "zones", "lsid" : { "id" : CSUUID("cb268a6a-b5dc-4453-84e1-563a73cffb81") } }
+INFO  11:39:09 App Message - Query Interpretation: create
+INFO  11:39:09 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("cb268a6a-b5dc-4453-84e1-563a73cffb81") } }
+INFO  11:39:36 App Message - Our Program Started...
+INFO  11:39:37 App Message - Query Interpretation: isMaster
+INFO  11:39:37 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:39:37 App Message - Query Interpretation: buildInfo
+INFO  11:39:37 App Message - { "buildInfo" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: getLastError
+INFO  11:39:37 App Message - { "getLastError" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: isMaster
+INFO  11:39:37 App Message - { "isMaster" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: buildInfo
+INFO  11:39:37 App Message - { "buildInfo" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: isMaster
+INFO  11:39:37 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:39:37 App Message - Query Interpretation: buildInfo
+INFO  11:39:37 App Message - { "buildInfo" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: getLastError
+INFO  11:39:37 App Message - { "getLastError" : 1 }
+INFO  11:39:37 App Message - Query Interpretation: listCollections
+INFO  11:39:37 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("8c79ca46-329a-4db2-a52c-c3e309aa5ddf") } }
+INFO  11:39:37 App Message - Query Interpretation: drop
+INFO  11:39:37 App Message - { "drop" : "Zones", "lsid" : { "id" : CSUUID("8c79ca46-329a-4db2-a52c-c3e309aa5ddf") } }
+INFO  11:39:37 App Message - Query Interpretation: create
+INFO  11:39:37 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("8c79ca46-329a-4db2-a52c-c3e309aa5ddf") } }
+INFO  11:39:38 App Message - Query Interpretation: insert
+INFO  11:39:38 App Message - { "insert" : "Zones", "ordered" : true, "documents" : [{ "_id" : null, "name" : { "first" : "John", "last" : "Deen" }, "birth" : ISODate("1880-01-10T05:00:00Z"), "death" : ISODate("1956-05-17T04:00:00Z"), "contribs" : ["Insight Out", "Rosemary Garden", "I Am Your Friend"], "awards" : [{ "award" : "IFA", "year" : 1921.0, "by" : "Doordarshan" }, { "award" : "STAR CINI", "year" : 1923.0, "by" : "Star" }, { "award" : "ZEE PROVISONAL", "year" : 1930.0, "by" : "Zee" }] }] }
+INFO  11:39:38 App Message - Query Interpretation: insert
+INFO  11:39:38 App Message - { "insert" : "Zones", "ordered" : true, "documents" : [{ "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "TECHNICAL CARTOONIST", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }] }
+INFO  11:39:38 App Message - Query Interpretation: insert
+INFO  11:39:38 App Message - { "insert" : "Zones", "ordered" : true, "documents" : [{ "_id" : "Hld_1", "name" : { "first" : "Kristen", "last" : "Lopher" }, "birth" : ISODate("1870-07-09T04:00:00Z"), "death" : ISODate("1938-07-17T04:00:00Z"), "contribs" : ["Rendeer In My Pond", "Rosemary Garden", "Whos is there?"], "awards" : [{ "award" : "HOLLESTER", "year" : 1918.0, "by" : "Hgtv" }, { "award" : "STAR CINI", "year" : 1923.0, "by" : "Star" }, { "award" : "OSCAR", "year" : 1936.0, "by" : "Hollywood" }] }] }
+INFO  11:39:38 App Message - Query Interpretation: insert
+INFO  11:39:38 App Message - { "insert" : "Zones", "ordered" : true, "documents" : [{ "_id" : "Ind_2", "name" : { "first" : "Rammohan", "last" : "Basu" }, "birth" : ISODate("1923-04-30T04:00:00Z"), "death" : ISODate("1980-03-11T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "My Lawn", "Please, Forget Me"], "awards" : [{ "award" : "Fimfare", "year" : 1952.0, "by" : "Bollywood" }, { "award" : "Bharat Ratna", "year" : 1971.0, "by" : "Govt Of India" }] }] }
+INFO  11:39:38 App Message - Query Interpretation: find
+INFO  11:39:38 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:39:38 App Message - Query Interpretation: find
+INFO  11:39:38 App Message - { "find" : "Zones", "filter" : { "_id" : "Ind_1" }, "limit" : 1, "singleBatch" : true }
+INFO  11:39:43 App Message - Query Interpretation: update
+INFO  11:39:43 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Technical Writer", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  11:39:47 App Message - Query Interpretation: isMaster
+INFO  11:39:47 App Message - { "isMaster" : 1 }
+INFO  11:39:47 App Message - Query Interpretation: buildInfo
+INFO  11:39:47 App Message - { "buildInfo" : 1 }
+INFO  11:59:42 App Message - Our Program Started...
+INFO  11:59:43 App Message - Query Interpretation: isMaster
+INFO  11:59:43 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:59:43 App Message - Query Interpretation: buildInfo
+INFO  11:59:43 App Message - { "buildInfo" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: getLastError
+INFO  11:59:43 App Message - { "getLastError" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: isMaster
+INFO  11:59:43 App Message - { "isMaster" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: buildInfo
+INFO  11:59:43 App Message - { "buildInfo" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: isMaster
+INFO  11:59:43 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  11:59:43 App Message - Query Interpretation: buildInfo
+INFO  11:59:43 App Message - { "buildInfo" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: getLastError
+INFO  11:59:43 App Message - { "getLastError" : 1 }
+INFO  11:59:43 App Message - Query Interpretation: listCollections
+INFO  11:59:43 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("ac703572-f463-4163-9911-4d6125aee970") } }
+INFO  11:59:43 App Message - Query Interpretation: create
+INFO  11:59:43 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("ac703572-f463-4163-9911-4d6125aee970") } }
+INFO  11:59:43 App Message - Collection already exists.
+INFO  11:59:43 App Message - Seeding to MongoDb is completed
+INFO  11:59:43 App Message - Query Interpretation: find
+INFO  11:59:43 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  11:59:43 App Message - Query Interpretation: find
+INFO  11:59:43 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi" }, "limit" : 1, "singleBatch" : true }
+INFO  11:59:53 App Message - Query Interpretation: isMaster
+INFO  11:59:53 App Message - { "isMaster" : 1 }
+INFO  11:59:53 App Message - Query Interpretation: buildInfo
+INFO  11:59:53 App Message - { "buildInfo" : 1 }
+INFO  11:59:53 App Message - Query Interpretation: update
+INFO  11:59:53 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Group Instructor", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  12:00:02 App Message - Query Interpretation: isMaster
+INFO  12:00:02 App Message - { "isMaster" : 1 }
+INFO  12:00:02 App Message - Query Interpretation: buildInfo
+INFO  12:00:02 App Message - { "buildInfo" : 1 }
+INFO  12:14:55 App Message - Our Program Started...
+INFO  12:14:56 App Message - Query Interpretation: isMaster
+INFO  12:14:56 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:14:56 App Message - Query Interpretation: buildInfo
+INFO  12:14:56 App Message - { "buildInfo" : 1 }
+INFO  12:14:56 App Message - Query Interpretation: getLastError
+INFO  12:14:56 App Message - { "getLastError" : 1 }
+INFO  12:14:56 App Message - Query Interpretation: isMaster
+INFO  12:14:56 App Message - { "isMaster" : 1 }
+INFO  12:14:56 App Message - Query Interpretation: buildInfo
+INFO  12:14:56 App Message - { "buildInfo" : 1 }
+INFO  12:14:57 App Message - Query Interpretation: isMaster
+INFO  12:14:57 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:14:57 App Message - Query Interpretation: buildInfo
+INFO  12:14:57 App Message - { "buildInfo" : 1 }
+INFO  12:14:57 App Message - Query Interpretation: getLastError
+INFO  12:14:57 App Message - { "getLastError" : 1 }
+INFO  12:14:57 App Message - Query Interpretation: listCollections
+INFO  12:14:57 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("2814a3b1-a0cf-4d15-ad01-4b9acb191b0d") } }
+INFO  12:14:57 App Message - Query Interpretation: create
+INFO  12:14:57 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("2814a3b1-a0cf-4d15-ad01-4b9acb191b0d") } }
+INFO  12:14:57 App Message - Collection already exists.
+INFO  12:14:57 App Message - Seeding to MongoDb is completed
+INFO  12:14:57 App Message - Query Interpretation: find
+INFO  12:14:57 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:14:57 App Message - Query Interpretation: find
+INFO  12:14:57 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "Group Instructor" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:15:08 App Message - Query Interpretation: isMaster
+INFO  12:15:08 App Message - { "isMaster" : 1 }
+INFO  12:15:08 App Message - Query Interpretation: buildInfo
+INFO  12:15:08 App Message - { "buildInfo" : 1 }
+INFO  12:16:22 App Message - Our Program Started...
+INFO  12:16:23 App Message - Query Interpretation: isMaster
+INFO  12:16:23 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:16:23 App Message - Query Interpretation: buildInfo
+INFO  12:16:23 App Message - { "buildInfo" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: getLastError
+INFO  12:16:23 App Message - { "getLastError" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: isMaster
+INFO  12:16:23 App Message - { "isMaster" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: buildInfo
+INFO  12:16:23 App Message - { "buildInfo" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: isMaster
+INFO  12:16:23 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:16:23 App Message - Query Interpretation: buildInfo
+INFO  12:16:23 App Message - { "buildInfo" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: getLastError
+INFO  12:16:23 App Message - { "getLastError" : 1 }
+INFO  12:16:23 App Message - Query Interpretation: listCollections
+INFO  12:16:23 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("6f1470bc-2315-416d-b3f9-2b0e9432b9d2") } }
+INFO  12:16:23 App Message - Query Interpretation: create
+INFO  12:16:23 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("6f1470bc-2315-416d-b3f9-2b0e9432b9d2") } }
+INFO  12:16:23 App Message - Collection already exists.
+INFO  12:16:23 App Message - Seeding to MongoDb is completed
+INFO  12:16:23 App Message - Query Interpretation: find
+INFO  12:16:23 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:16:24 App Message - Query Interpretation: find
+INFO  12:16:24 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "Group Instructor" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:16:29 App Message - Query Interpretation: isMaster
+INFO  12:16:29 App Message - { "isMaster" : 1 }
+INFO  12:16:29 App Message - Query Interpretation: buildInfo
+INFO  12:16:29 App Message - { "buildInfo" : 1 }
+INFO  12:16:29 App Message - Query Interpretation: update
+INFO  12:16:29 App Message - { "update" : "Zones", "ordered" : true, "updates" : [{ "q" : { "_id" : "Ind_1" }, "u" : { "_id" : "Ind_1", "name" : { "first" : "Nidhi", "last" : "Bansal" }, "birth" : ISODate("1820-03-11T05:00:00Z"), "death" : ISODate("1943-02-21T05:00:00Z"), "contribs" : ["Pani Ki Pehali Boond", "Doopahar Ki Dhoop", "Kanha Ka Bansuri"], "awards" : [{ "award" : "OSCAR", "year" : 1922.0, "by" : "Hollywood" }, { "award" : "Financial Author", "year" : 1926.0, "by" : "Star" }, { "award" : "COREOGRAPHY", "year" : 1942.0, "by" : "Zee" }] }, "upsert" : true }] }
+INFO  12:16:33 App Message - Query Interpretation: isMaster
+INFO  12:16:33 App Message - { "isMaster" : 1 }
+INFO  12:16:33 App Message - Query Interpretation: buildInfo
+INFO  12:16:33 App Message - { "buildInfo" : 1 }
+INFO  12:16:43 App Message - Query Interpretation: isMaster
+INFO  12:16:43 App Message - { "isMaster" : 1 }
+INFO  12:16:43 App Message - Query Interpretation: buildInfo
+INFO  12:16:43 App Message - { "buildInfo" : 1 }
+INFO  12:21:02 App Message - Our Program Started...
+INFO  12:21:03 App Message - Query Interpretation: isMaster
+INFO  12:21:03 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:21:03 App Message - Query Interpretation: buildInfo
+INFO  12:21:03 App Message - { "buildInfo" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: getLastError
+INFO  12:21:03 App Message - { "getLastError" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: isMaster
+INFO  12:21:03 App Message - { "isMaster" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: buildInfo
+INFO  12:21:03 App Message - { "buildInfo" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: isMaster
+INFO  12:21:03 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:21:03 App Message - Query Interpretation: buildInfo
+INFO  12:21:03 App Message - { "buildInfo" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: getLastError
+INFO  12:21:03 App Message - { "getLastError" : 1 }
+INFO  12:21:03 App Message - Query Interpretation: listCollections
+INFO  12:21:03 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("976de6ff-7dcf-43f1-9b51-8935e661edf5") } }
+INFO  12:21:54 App Message - Our Program Started...
+INFO  12:21:56 App Message - Query Interpretation: isMaster
+INFO  12:21:56 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:21:56 App Message - Query Interpretation: buildInfo
+INFO  12:21:56 App Message - { "buildInfo" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: getLastError
+INFO  12:21:56 App Message - { "getLastError" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: isMaster
+INFO  12:21:56 App Message - { "isMaster" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: buildInfo
+INFO  12:21:56 App Message - { "buildInfo" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: isMaster
+INFO  12:21:56 App Message - { "isMaster" : 1, "client" : { "driver" : { "name" : "mongo-csharp-driver", "version" : "2.5.0.0" }, "os" : { "type" : "Windows", "name" : "Microsoft Windows 10.0.16299", "architecture" : "x86_64", "version" : "10.0.16299" }, "platform" : ".NET Core 4.6.00001.0" } }
+INFO  12:21:56 App Message - Query Interpretation: buildInfo
+INFO  12:21:56 App Message - { "buildInfo" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: getLastError
+INFO  12:21:56 App Message - { "getLastError" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: listCollections
+INFO  12:21:56 App Message - { "listCollections" : 1, "lsid" : { "id" : CSUUID("aeb64260-2b79-403a-8ffd-c19c51e8d7a6") } }
+INFO  12:21:56 App Message - Query Interpretation: create
+INFO  12:21:56 App Message - { "create" : "Zones", "capped" : false, "size" : NumberLong(5000), "max" : NumberLong(100), "lsid" : { "id" : CSUUID("aeb64260-2b79-403a-8ffd-c19c51e8d7a6") } }
+INFO  12:21:56 App Message - Collection already exists.
+INFO  12:21:56 App Message - Seeding to MongoDb is completed
+INFO  12:21:56 App Message - Query Interpretation: find
+INFO  12:21:56 App Message - { "find" : "Zones", "filter" : { "name.first" : "Kristen" }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:21:56 App Message - Query Interpretation: find
+INFO  12:21:56 App Message - { "find" : "Zones", "filter" : { "name.first" : "Nidhi", "awards" : { "$elemMatch" : { "award" : "Group Instructor" } } }, "skip" : 0, "noCursorTimeout" : false }
+INFO  12:21:56 App Message - Query Interpretation: isMaster
+INFO  12:21:56 App Message - { "isMaster" : 1 }
+INFO  12:21:56 App Message - Query Interpretation: buildInfo
+INFO  12:21:56 App Message - { "buildInfo" : 1 }
+INFO  12:22:05 App Message - Query Interpretation: isMaster
+INFO  12:22:05 App Message - { "isMaster" : 1 }
+INFO  12:22:05 App Message - Query Interpretation: buildInfo
+INFO  12:22:05 App Message - { "buildInfo" : 1 }
+INFO  12:22:15 App Message - Query Interpretation: isMaster
+INFO  12:22:15 App Message - { "isMaster" : 1 }
+INFO  12:22:15 App Message - Query Interpretation: buildInfo
+INFO  12:22:15 App Message - { "buildInfo" : 1 }

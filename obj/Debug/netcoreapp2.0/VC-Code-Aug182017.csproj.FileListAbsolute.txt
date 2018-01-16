@@ -19,3 +19,14 @@ C:\Users\Sanje\Desktop\PROJECTS\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0
 C:\Users\Sanje\Desktop\PROJECTS\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.AssemblyInfo.cs
 C:\Users\Sanje\Desktop\PROJECTS\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.dll
 C:\Users\Sanje\Desktop\PROJECTS\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.pdb
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\bin\Debug\netcoreapp2.0\VC-Code-Aug182017.deps.json
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\bin\Debug\netcoreapp2.0\VC-Code-Aug182017.runtimeconfig.json
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\bin\Debug\netcoreapp2.0\VC-Code-Aug182017.runtimeconfig.dev.json
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\bin\Debug\netcoreapp2.0\VC-Code-Aug182017.dll
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\bin\Debug\netcoreapp2.0\VC-Code-Aug182017.pdb
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.csprojResolveAssemblyReference.cache
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.csproj.CoreCompileInputs.cache
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.AssemblyInfoInputs.cache
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.AssemblyInfo.cs
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.dll
+D:\VisualStudio 2017 Projects\GITHUB\VC-Code-Aug182017\obj\Debug\netcoreapp2.0\VC-Code-Aug182017.pdb

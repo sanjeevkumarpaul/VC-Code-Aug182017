@@ -24,6 +24,8 @@ namespace MyCore2
             //TrySimpleQuery();
             //TryRelationshipQuery();
             TrySimpleMongoQuery();
+
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -49,19 +51,23 @@ namespace MyCore2
             MongoFrameworkCore _context = new MongoFrameworkCore( _config.Server, 
                                                                   _config.Port,
                                                                   _config.Database ) ;
+            _context.SeedMongoData();
+
 
             //var zones = _context.ReadAllDocuments();
             //var zones = _context.LimitedZones();
             //var zones = _context.LimitedFields();
             //var zones = _context.MultipleConditions();
-            //var zones = _context.FilterQuerable();
-            var zones = _context.FilterQuerableChaining();
-
+            var zones = _context.FilterQuerable();
+            //var zones = _context.FilterQuerableChaining();
+            
             foreach(var zone in zones)
             {
                 Console.WriteLine($"Zone ID: {zone.Id} -> Name: {zone.name?.Last}, {zone.name?.First} -> Contribution Cnt: {zone.Contribs?.Count()}, Awards Cnt: {zone.Awards?.Count()}");
             }
 
+            //_context.UpdateOneAwardee("Nidhi", "Technical Writer", "Group Instructor" );
+            _context.UpdateAwardee("Nidhi", "Group Instructor", "Financial Author");
         }
 
         private static  void TrySimpleQuery()
